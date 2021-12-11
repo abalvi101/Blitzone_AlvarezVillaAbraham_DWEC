@@ -1,0 +1,91 @@
+.main__header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.main__header > img {
+    width: 100%;
+}
+
+.main__header > h1 {
+    position: absolute;
+    align-self: center;
+    font-size: 8rem;
+    color: var(--white);
+    font-family: Sora, sans-serif;
+    text-shadow: 5px 5px 5px #2B2B2B;
+    width: 100%;
+    text-align: center;
+}
+
+.main__form {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    border: 0.1rem solid var(--gold);
+    padding: 0.6rem 4rem;
+}
+
+.main__form > input {
+    box-shadow: 0.05rem 0.05rem #2B2B2B;
+    border: 0;
+    border-radius: 0;
+    background-color: var(--grey);
+    padding: 0.5rem 1rem;
+    text-align: right;
+    width: 20%;
+    font-size: small;
+}
+
+.main__form > select {
+    border: 0.05rem solid #2B2B2B;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    width: 18%;
+    font-size: small;
+}
+
+.main__sep {
+    width: 88%;
+    margin: 0 auto 1.5rem auto;
+}
+
+.main__champions {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem 4rem 2rem;
+}
+
+.champions__champion {
+    width: 32%;
+    display: flex;
+}
+
+.champions__champion > img {
+    width: 45%;
+}
+
+.champion__info {
+    width: 55%;
+    padding: 1.3rem 0.8rem;
+    background-color: var(--grey);
+}
+
+.info__name {
+    font-family: Sora, sans-serif;
+    font-size: 1.2rem;
+}
+
+.info__phrase {
+    font-size: 0.8rem;
+    margin: 0.3rem 0 1rem 0;
+}
+
+.info__description {
+    font-size: 0.7rem;
+}
+

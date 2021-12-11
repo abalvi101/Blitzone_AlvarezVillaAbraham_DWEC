@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Blitztone</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/login-light.css">
+    <link rel="stylesheet" href="css/champions-light.css">
 </head>
-<body>
 
+<body>
     <header class="header">
         <div class="header__div">
             <img src="img/logo.svg" alt="">
@@ -21,37 +21,93 @@
             <li class="ul__li"><a href="">INICIO</a></li>
             <li class="ul__li"><a href="">TEAMBUILDER</a></li>
             <li class="ul__li"><a href="">INSPECTOR</a></li>
-            <li class="ul__li"><a href="">CAMPEONES</a></li>
+            <li class="ul__li ul__li--on"><a href="">CAMPEONES</a></li>
             <li class="ul__li"><a href="">OBJETOS</a></li>
         </ul>
         <svg class="header__user" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.5 7.75C14.542 7.75 13.6055 8.03408 12.809 8.56632C12.0124 9.09856 11.3916 9.85505 11.025 10.7401C10.6583 11.6252 10.5624 12.5991 10.7493 13.5387C10.9362 14.4783 11.3975 15.3414 12.075 16.0188C12.7524 16.6962 13.6154 17.1575 14.555 17.3444C15.4946 17.5313 16.4685 17.4354 17.3536 17.0688C18.2387 16.7022 18.9952 16.0813 19.5274 15.2848C20.0597 14.4882 20.3438 13.5518 20.3438 12.5938C20.3438 11.3091 19.8334 10.0771 18.9251 9.1687C18.0167 8.26032 16.7846 7.75 15.5 7.75Z" fill="#EFEFEF"/>
             <path d="M15.5 1.9375C12.8176 1.9375 10.1954 2.73293 7.96508 4.22319C5.73474 5.71346 3.9964 7.83163 2.96989 10.3099C1.94338 12.7881 1.67479 15.515 2.19811 18.1459C2.72142 20.7768 4.01312 23.1934 5.90987 25.0901C7.80662 26.9869 10.2232 28.2786 12.8541 28.8019C15.485 29.3252 18.2119 29.0566 20.6901 28.0301C23.1684 27.0036 25.2865 25.2653 26.7768 23.0349C28.2671 20.8046 29.0625 18.1824 29.0625 15.5C29.0584 11.9043 27.6282 8.45697 25.0856 5.9144C22.543 3.37182 19.0957 1.9416 15.5 1.9375ZM23.2423 24.1471C23.2229 22.8764 22.7052 21.6641 21.8007 20.7715C20.8961 19.8789 19.6771 19.3774 18.4063 19.375H12.5938C11.3229 19.3774 10.1039 19.8789 9.19934 20.7715C8.29477 21.6641 7.77706 22.8764 7.75776 24.1471C6.00099 22.5784 4.76212 20.5132 4.20519 18.2248C3.64826 15.9364 3.79954 13.5328 4.639 11.3323C5.47846 9.1318 6.9665 7.23818 8.90608 5.90217C10.8457 4.56617 13.1453 3.85081 15.5005 3.85081C17.8557 3.85081 20.1553 4.56617 22.0949 5.90217C24.0345 7.23818 25.5225 9.1318 26.362 11.3323C27.2014 13.5328 27.3527 15.9364 26.7958 18.2248C26.2389 20.5132 25 22.5784 23.2432 24.1471H23.2423Z" fill="#EFEFEF"/>
         </svg>
+
     </header>
 
-    <main>
-        <img class="background" src="img/fondo-login.png" alt="">
-        <form class="form" action="">
-            <fieldset>
-                <legend>INICIAR SESIÓN</legend>
-                <label for="name">
-                    Nombre de usuario:
-                    <input type="text" id="name" required>
-                </label>
-                <label for="password">
-                    Contraseña:
-                    <input type="password" id="password" required>
-                </label>
-                <div class="form__footer">
-                    <p>¿No tienes usuario? <a href="">Regístrate</a></p>
-                    <div class="footer__button">
-                        <img src="img/boton.svg" alt="">
-                        <span>CONTINUAR</span>
-                    </div>
-                </div>
-            </fieldset>
+    <main class="main">
+        <header class="main__header">
+            <img src="img/fondo-champ.png" alt="">
+            <h1>CAMPEONES</h1>
+        </header>
+        <form class="main__form" action="">
+            <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.3 20.25V1.6875C15.3 1.23995 15.4791 0.810725 15.7979 0.494258C16.1167 0.17779 16.5491 0 17 0C17.4509 0 17.8833 0.17779 18.2021 0.494258C18.5209 0.810725 18.7 1.23995 18.7 1.6875V20.25H20.4C20.8509 20.25 21.2833 20.4278 21.6021 20.7443C21.9209 21.0607 22.1 21.4899 22.1 21.9375C22.1 22.3851 21.9209 22.8143 21.6021 23.1307C21.2833 23.4472 20.8509 23.625 20.4 23.625H18.7V25.3125C18.7 25.7601 18.5209 26.1893 18.2021 26.5057C17.8833 26.8222 17.4509 27 17 27C16.5491 27 16.1167 26.8222 15.7979 26.5057C15.4791 26.1893 15.3 25.7601 15.3 25.3125V23.625H13.6C13.1491 23.625 12.7167 23.4472 12.3979 23.1307C12.0791 22.8143 11.9 22.3851 11.9 21.9375C11.9 21.4899 12.0791 21.0607 12.3979 20.7443C12.7167 20.4278 13.1491 20.25 13.6 20.25H15.3ZM27.2 3.375V1.6875C27.2 1.23995 27.3791 0.810725 27.6979 0.494258C28.0167 0.17779 28.4491 0 28.9 0C29.3509 0 29.7833 0.17779 30.1021 0.494258C30.4209 0.810725 30.6 1.23995 30.6 1.6875V3.375H32.3C32.7509 3.375 33.1833 3.55279 33.5021 3.86926C33.8209 4.18573 34 4.61495 34 5.0625C34 5.51005 33.8209 5.93927 33.5021 6.25574C33.1833 6.57221 32.7509 6.75 32.3 6.75H30.6V25.3125C30.6 25.7601 30.4209 26.1893 30.1021 26.5057C29.7833 26.8222 29.3509 27 28.9 27C28.4491 27 28.0167 26.8222 27.6979 26.5057C27.3791 26.1893 27.2 25.7601 27.2 25.3125V6.75H25.5C25.0491 6.75 24.6167 6.57221 24.2979 6.25574C23.9791 5.93927 23.8 5.51005 23.8 5.0625C23.8 4.61495 23.9791 4.18573 24.2979 3.86926C24.6167 3.55279 25.0491 3.375 25.5 3.375H27.2ZM6.8 8.4375H8.5C8.95087 8.4375 9.38327 8.61529 9.70208 8.93176C10.0209 9.24823 10.2 9.67745 10.2 10.125C10.2 10.5726 10.0209 11.0018 9.70208 11.3182C9.38327 11.6347 8.95087 11.8125 8.5 11.8125H6.8V25.3125C6.8 25.7601 6.62089 26.1893 6.30208 26.5057C5.98327 26.8222 5.55087 27 5.1 27C4.64913 27 4.21673 26.8222 3.89792 26.5057C3.57911 26.1893 3.4 25.7601 3.4 25.3125V11.8125H1.7C1.24913 11.8125 0.81673 11.6347 0.497918 11.3182C0.179107 11.0018 0 10.5726 0 10.125C0 9.67745 0.179107 9.24823 0.497918 8.93176C0.81673 8.61529 1.24913 8.4375 1.7 8.4375H3.4V1.6875C3.4 1.23995 3.57911 0.810725 3.89792 0.494258C4.21673 0.17779 4.64913 0 5.1 0C5.55087 0 5.98327 0.17779 6.30208 0.494258C6.62089 0.810725 6.8 1.23995 6.8 1.6875V8.4375Z" fill="#B48543"/>
+            </svg>
+            <label for="posicion">
+                <select name="rol" id="posicion">
+                    <option value="posicion">POSICIÓN</option>
+                    <option value="toplaner">TOPLANER</option>
+                    <option value="jungler">JUNGLER</option>
+                    <option value="midlaner">MIDLANER</option>
+                    <option value="adc">ADC</option>
+                    <option value="support">SUPPORT</option>
+                </select>
+            </label>
+            <label for="rol">
+                <select name="rol" id="rol">
+                    <option value="rol">ROL</option>
+                    <option value="tanque">TANQUE</option>
+                    <option value="luchador">LUCHADOR</option>
+                    <option value="mago">MAGO</option>
+                    <option value="asesino">ASESINO</option>
+                    <option value="tirador">TIRADOR</option>
+                    <option value="apoyo">APOYO</option>
+                </select>
+            </label>
+            <label for="ordenar">
+                <select name="ordenar" id="ordenar">
+                    <option value="ordenar">ORDENAR POR</option>
+                    <option value="fechadesc">FECHA LANZ. DESC.</option>
+                    <option value="fechaasc">FECHA LANZ ASC.</option>
+                    <option value="preciodesc">PRECIO DESC.</option>
+                    <option value="precioasc">PRECIO ASC.</option>
+                </select>
+            </label>
+            <label for="nombre">
+                <input type="text" id="nombre" placeholder="NOMBRE">
+            </label>
+            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.4011 24.8022C15.1526 24.8017 17.8247 23.8806 19.9921 22.1856L26.8066 29L28.9985 26.8081L22.184 19.9937C23.8799 17.8261 24.8016 15.1533 24.8022 12.4011C24.8022 5.56345 19.2388 0 12.4011 0C5.56345 0 0 5.56345 0 12.4011C0 19.2388 5.56345 24.8022 12.4011 24.8022ZM12.4011 3.10028C17.5305 3.10028 21.7019 7.2717 21.7019 12.4011C21.7019 17.5305 17.5305 21.7019 12.4011 21.7019C7.2717 21.7019 3.10028 17.5305 3.10028 12.4011C3.10028 7.2717 7.2717 3.10028 12.4011 3.10028Z" fill="#B48543"/>
+                <path d="M14.5913 10.21C15.1789 10.7991 15.5029 11.5773 15.5029 12.402H18.6033C18.6047 11.5872 18.4445 10.7803 18.1322 10.0278C17.8198 9.27531 17.3613 8.5922 16.7833 8.01796C14.4363 5.67403 10.367 5.67403 8.02148 8.01796L10.2104 10.2131C11.3886 9.03801 13.4194 9.04111 14.5913 10.21Z" fill="#B48543"/>
+            </svg>
         </form>
+        <img class="main__sep" src="img/sep.svg" alt="">
+        <section class="main__champions">
+            <div class="champions__champion">
+                <img src="img/cassiopeia.png" alt="Cassiopeia">
+                <div class="champion__info">
+                    <h3 class="info__name">CASSIOPEIA</h3>
+                    <p class="info__phrase">El abrazo de la serpiente</p>
+                    <p class="info__description">Cassiopeia es una criatura mortal empeñada en manipular a otros según su siniestra voluntad. La hija más joven y hermosa de la noble familia...
+                    <span>VER MÁS</span></p>
+                </div>
+            </div>
+            <div class="champions__champion">
+                <img src="img/cassiopeia.png" alt="Cassiopeia">
+                <div class="champion__info">
+                    <h3 class="info__name">CASSIOPEIA</h3>
+                    <p class="info__phrase">El abrazo de la serpiente</p>
+                    <p class="info__description">Cassiopeia es una criatura mortal empeñada en manipular a otros según su siniestra voluntad. La hija más joven y hermosa de la noble familia...
+                        <span>VER MÁS</span></p>
+                </div>
+            </div>
+            <div class="champions__champion">
+                <img src="img/cassiopeia.png" alt="Cassiopeia">
+                <div class="champion__info">
+                    <h3 class="info__name">CASSIOPEIA</h3>
+                    <p class="info__phrase">El abrazo de la serpiente</p>
+                    <p class="info__description">Cassiopeia es una criatura mortal empeñada en manipular a otros según su siniestra voluntad. La hija más joven y hermosa de la noble familia...
+                        <span>VER MÁS</span></p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -67,10 +123,9 @@
                 <path d="M20.0325 15.0459C19.0511 15.0459 18.0917 15.3365 17.2757 15.8808C16.4596 16.4252 15.8236 17.1989 15.448 18.1042C15.0725 19.0094 14.9742 20.0056 15.1657 20.9666C15.3571 21.9276 15.8297 22.8103 16.5237 23.5032C17.2177 24.196 18.1019 24.6679 19.0645 24.859C20.027 25.0502 21.0248 24.9521 21.9315 24.5771C22.8382 24.2022 23.6132 23.5672 24.1585 22.7525C24.7037 21.9377 24.9948 20.9799 24.9948 20.0001C24.9948 18.6865 24.4722 17.4267 23.5421 16.4976C22.6119 15.5686 21.3503 15.0464 20.0345 15.0459H20.0325Z" fill="#EFEFEF"/>
                 <path d="M39.9248 10.14C39.9068 8.59363 39.6222 7.06191 39.0834 5.612C38.6916 4.55193 38.0666 3.59307 37.2545 2.806C36.4663 1.99507 35.5058 1.37107 34.4439 0.98C32.9906 0.443306 31.456 0.159195 29.9066 0.14C27.3284 0.0279999 26.5571 0 20.0325 0C13.5119 0 12.7367 0.0239999 10.1605 0.14C8.60998 0.16 7.07549 0.442 5.62313 0.98C4.56141 1.37 3.59984 1.994 2.81257 2.806C2.00189 3.59424 1.37713 4.55275 0.983597 5.612C0.446106 7.06296 0.161536 8.59511 0.142231 10.142C0.0280457 12.716 0 13.488 0 20.002C0 26.516 0.0240392 27.288 0.142231 29.86C0.162264 31.406 0.444722 32.94 0.983597 34.39C1.37423 35.45 1.99925 36.41 2.81056 37.194C3.59939 38.0042 4.55967 38.6281 5.62113 39.02C7.07401 39.5582 8.60893 39.8424 10.1585 39.86C12.7347 39.978 13.5099 40 20.0325 40C26.5571 40 27.3304 39.976 29.9086 39.86C31.4574 39.8421 32.9917 39.558 34.4439 39.02C35.4981 38.6143 36.4556 37.9928 37.2546 37.1953C38.0537 36.3979 38.6766 35.4423 39.0834 34.39C39.6203 32.938 39.9048 31.406 39.9248 29.86C40.041 27.286 40.065 26.512 40.065 20C40.065 13.486 40.041 12.716 39.9248 10.14ZM34.8265 26.126C34.8028 27.3591 34.5691 28.5792 34.1354 29.734C33.7529 30.7211 33.1682 31.6175 32.4186 32.3659C31.6689 33.1143 30.771 33.6981 29.7823 34.08C28.6261 34.5122 27.4049 34.7455 26.1705 34.77C24.5819 34.844 24.0751 34.86 20.0325 34.86C15.99 34.86 15.4851 34.842 13.8966 34.77C12.6622 34.7454 11.4409 34.5121 10.2847 34.08C9.29557 33.6985 8.39722 33.1148 7.64724 32.3664C6.89727 31.618 6.31222 30.7213 5.92963 29.734C5.49647 28.579 5.26277 27.359 5.2385 26.126C5.16839 24.542 5.14836 24.036 5.14836 20C5.14836 15.964 5.16639 15.458 5.2385 13.874C5.26277 12.641 5.49647 11.421 5.92963 10.266C6.31212 9.27859 6.89712 8.38191 7.64711 7.63348C8.3971 6.88506 9.29551 6.30141 10.2847 5.92C11.4409 5.48776 12.6622 5.25446 13.8966 5.23C15.4851 5.156 15.994 5.14 20.0345 5.14C24.0751 5.14 24.5819 5.158 26.1705 5.23C27.4056 5.25392 28.6276 5.48724 29.7844 5.92C30.7727 6.3021 31.6702 6.88603 32.4194 7.6344C33.1687 8.38278 33.7532 9.2791 34.1354 10.266C34.5701 11.422 34.8025 12.64 34.8265 13.874C34.8987 15.458 34.9167 15.964 34.9167 20C34.9167 24.036 34.8987 24.54 34.8265 26.126Z" fill="#EFEFEF"/>
             </svg>
-
         </div>
         <div class="footer__name">
-            <img src="/img/logo_dorado.svg" alt="">
+            <img src="img/logo_dorado.svg" alt="">
             <span class="name__name">BLITZTONE</span>
         </div>
         <ul class="footer__links">
@@ -80,6 +135,5 @@
             <li>Política de privacidad</li>
         </ul>
     </footer>
-
 </body>
 </html>

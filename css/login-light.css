@@ -40,9 +40,12 @@ main {
     margin: 0.5rem 0;
     height: 1.8rem;
     width: 100%;
+    background-color: var(--white);
+    border: 0;
+    box-shadow: 1px 1px 0 #696969;
 }
 
-.form__button {
+.footer__button {
     position: relative;
     display: flex;
     width: 50%;
@@ -50,17 +53,40 @@ main {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.form__button > img {
+.form__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 1rem;
+}
+
+.form__footer > p {
+    display: inline-block;
+    text-align: end;
+    font-size: 0.75rem;
+    margin-right: 1rem;
+}
+
+.form__footer > p > a {
+    font-weight: bold;
+}
+
+.footer__button {
+    width: 80%;
+}
+
+.footer__button > img {
     width: 100%;
 }
 
-.form__button span {
+.footer__button span {
     position: absolute;
     left: 0;
     width: 100%;
     align-self: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--gold);
     font-family: Sora, sans-serif;
     font-weight: bold;

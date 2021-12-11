@@ -1,20 +1,3 @@
-:root {
-    --black: #141414;
-    --white: #EFEFEF;
-    --gold: #B48543;
-    --goldShadow: #49361B;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url("/font/Roboto-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: Sora;
-    src: url("/font/Sora-VariableFont_wght.ttf") format("truetype");
-}
-
 * {
     padding: 0;
     margin: 0;

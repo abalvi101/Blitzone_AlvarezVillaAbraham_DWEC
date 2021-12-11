@@ -1,8 +1,11 @@
 :root {
     --black: #141414;
+    --blacky: #242424;
     --white: #EFEFEF;
     --gold: #B48543;
     --goldShadow: #49361B;
+    --goldShadowDark: #745A36;
+    --grey: #EDEDED;
 }
 
 @font-face {
