@@ -1,0 +1,45 @@
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem 50px;
+}
+
+.footer__rrss {
+    display: flex;
+    height: 100%;
+}
+
+.footer__rrss > svg {
+    width: 30px;
+    height: 30px;
+    margin: 0 1rem 0.25rem 1rem;
+}
+
+.footer__name {
+    color: var(--gold);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__name > img {
+    width: 5rem;
+    align-self: center;
+    margin-bottom: 0.4rem;
+}
+
+.name__name {
+    font-family: Sora, sans-serif;
+    font-weight: bold;
+}
+
+.footer__links {
+    text-align: end;
+    list-style: none;
+}
+
+.footer__links > li {
+    margin: 0.2rem 0;
+}

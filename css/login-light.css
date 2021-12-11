@@ -1,0 +1,68 @@
+main {
+    width: 100%;
+}
+
+.background {
+    width: 100%;
+    position: relative;
+}
+
+.form {
+    position: absolute;
+    top: 12%;
+    left: 13%;
+    background-color: rgba(239,239,239, 0.75);
+    padding: 3rem;
+    width: 28%;
+}
+
+.form > fieldset, .form > fieldset > label {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
+.form legend {
+    font-size: 1.7rem;
+    color: var(--gold);
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 0 var(--goldShadow);
+    margin: 0.5rem auto 1.5rem auto;
+}
+
+.form > fieldset > label {
+    font-weight: 600;
+    margin: 0.2rem 0;
+}
+
+.form > fieldset > label > input {
+    margin: 0.5rem 0;
+    height: 1.8rem;
+    width: 100%;
+}
+
+.form__button {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.form__button > img {
+    width: 100%;
+}
+
+.form__button span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--gold);
+    font-family: Sora, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 var(--goldShadow);
+}
