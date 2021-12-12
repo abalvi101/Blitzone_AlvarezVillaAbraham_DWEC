@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link id="stylesheet" rel="stylesheet" href="/css/login-light.css">
@@ -40,20 +40,32 @@
         <img class="background" src="/img/fondo-login.png" alt="">
         <form class="form" action="">
             <fieldset>
-                <legend>INICIAR SESIÓN</legend>
+                <legend>REGISTRAR USUARIO</legend>
                 <label for="name">
                     Nombre de usuario:
                     <input type="text" id="name" required>
+                </label>
+                <label for="email">
+                    Correo electrónico:
+                    <input type="email" id="email" required>
+                </label>
+                <label for="date">
+                    Fecha de nacimiento:
+                    <input type="date" id="date" required>
                 </label>
                 <label for="password">
                     Contraseña:
                     <input type="password" id="password" required>
                 </label>
+                <label for="verify-password">
+                    Verificar contraseña:
+                    <input type="password" id="verify-password" required>
+                </label>
                 <div class="form__footer">
-                    <p>¿No tienes usuario? <a href="/register.html">Regístrate</a></p>
+                    <p>¿Ya tienes usuario? <a href="/login.html">Inicia sesión</a></p>
                     <div class="footer__button">
                         <img src="/img/boton.svg" alt="">
-                        <button>CONTINUAR</button>
+                        <button onclick="validarRegistro()">CONTINUAR</button>
                     </div>
                 </div>
             </fieldset>
@@ -87,6 +99,7 @@
         </ul>
     </footer>
 
+    <script src="/js/register.js"></script>
     <script src="/js/dark-mode.js"></script>
 
 </body>
